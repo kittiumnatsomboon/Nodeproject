@@ -1,7 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useEffect, useState } from 'react';
+
 
 function App() {
+
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch('/api/data')
+      .then(response => response.json())
+      .then(data => setData(data));
+  }, []);
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +28,11 @@ function App() {
           Learn React
         </a>
       </header>
+      <p className="App-intro">
+        {data.map(item => (
+          <div key={item.id}>{item.value}</div>
+        ))}
+      </p>
     </div>
   );
 }
