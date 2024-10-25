@@ -1,0 +1,44 @@
+เขียน javascript รูปแบบใหม่
+การประกาศตัวแปรโดยใช้ let แทน var เนื่องจาก var block scobe กว้างกว่า let
+const ประกาศค่าคงที่
+---------------------------------------------
+arrow function การประกาศฟังชั่นแบบใหม่
+Employee=()=>{} แบบหลายบรรทัด
+Employee=()=> parameter แบบบรรทัดเดียว
+
+let Employee = (fname,lname)=> fname , lname
+const Employee2 = (fname,lname)=> fname , lname
+---------------------------------------------------
+สร้าง object
+
+const หรือ let ก็ได้
+const customer = {
+    customer_name : "",
+    customer_age : 15,
+    customer_address : {
+        county : "thai",
+        zipcode : 18120
+    },
+    ; เพิ่ม Method ในฟังชั่นได้
+    showdata(){
+          console.log("แสดงข้อมูลลูกค้า")
+          console.log(customer.cusmername)
+          console.log(customer.cusmer_lastname)
+          
+    }
+    customer.showdata() การเข้าถึงผ่าน ตัวแปร object.Method
+}
+------------------------------------------------
+การทำงานกับ string
+Multiline string : สามารถทำงานกับข้อความยาวๆได้ โดยการขึ้นบรรทัดใหม่ไม่มีข้อผิดพลาด (``)
+
+interporation สามารถแทรกตัวแปรลงในStringได้ โดยใช้ `MESSAGGE ${ ตัวแปร }`
+
+ตัวอย่าง
+const myfunction = (username,lastname)=> username + lastname
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    console.log(`ชื่อและนามสกุล ${myfunction("kitti","last")}`)
+);
+----------------------------------------------------------------
