@@ -3,14 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './controller/App';
 import reportWebVitals from './reportWebVitals';
-
-const numbers = [1, 2, 3, 4, 5, 6];
-const[one, two, ...rest] = numbers;
+const numbers = [1,2,3,4,5]
+const[one, two, ...rest] = numbers
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    console.log(numbers),
     console.log(rest)
-    
 );
 
 // If you want to start measuring performance in your app, pass a function
