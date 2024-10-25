@@ -60,5 +60,8 @@ const updateMyVehicle = {
 }
 
 const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
-
 ------------------------------------------------
+rest parameter คือ การรับพารามิเตอร์เข้าไปทำงานในฟังชั่นไม่จำกัดจำนวนพารามิเตอร์
+
+const[one, two, ...rest] = numbers;
+let x = (fullname,lastname,...param)=>{}
