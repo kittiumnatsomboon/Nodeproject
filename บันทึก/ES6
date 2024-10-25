@@ -42,3 +42,23 @@ root.render(
     console.log(`ชื่อและนามสกุล ${myfunction("kitti","last")}`)
 );
 ----------------------------------------------------------------
+Spread operator : ใช้จัดการกระจายสมาชิกใน Array ออกมาโดยเติมเครื่องหมาย ... ด้านหน้าตัวแปร Array
+ตัวอย่าง
+const newarr = [10,20,30]
+const newarrs = [...newarr,20,30]
+แบบ object ก็ทำได้เช่นกัน
+const myVehicle = {
+  brand: 'Ford',
+  model: 'Mustang',
+  color: 'red'
+}
+
+const updateMyVehicle = {
+  type: 'car',
+  year: 2021, 
+  color: 'yellow'
+}
+
+const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+
+------------------------------------------------
