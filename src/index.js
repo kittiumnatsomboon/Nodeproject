@@ -4,9 +4,12 @@ import './index.css';
 import App from './controller/App';
 import reportWebVitals from './reportWebVitals';
 
-
+const numbers = [1, 2, 3, 4, 5, 6];
+const[one, two, ...rest] = numbers;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+    console.log(numbers),
+    console.log(rest)
     
 );
 
