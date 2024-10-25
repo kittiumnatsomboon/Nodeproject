@@ -4,11 +4,11 @@ import './index.css';
 import App from './controller/App';
 import reportWebVitals from './reportWebVitals';
 
-let calculate = (sum , sam )=>{
-  
+const calculate = (sum , sam )=>{
+    let total = sum + sam
     if(sum <= sam){
-      
-        console.log("ค่า sum มากกว่า sam")
+         
+       return console.log("ค่า sum มากกว่า sam" + total)
     }else{
         console.log("ค่า sam มากกว่า sum")
     }
@@ -19,7 +19,7 @@ let xfunction = (x , y)=>{
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  calculate(100,6),
+  calculate(100 , 10),
   
 );
 const call = ReactDOM.createRoot(document.getElementById('call'));
