@@ -5,17 +5,17 @@ import App from './controller/App';
 import reportWebVitals from './reportWebVitals';
 
 
-let myfunctions = (customeradd = "กรุงเทพ",nickname,age_number)=>{
-    let address = `ที่อยู่ปัจจุบัน ${customeradd} ชื่อเล่น ${nickname} อายุ ${age_number}`
-    return address
-}
-let myfunction = (nickname,age_number,customeradd = "กรุงเทพ")=>{
-    let address = `ชื่อเล่น ${nickname} อายุ ${age_number}`
-    return address
-}
+const newarr = [10,20,30]
+const newarre = [40,50,60]
+const newarrs = [...newarr,...newarre]
+
+const newarrb = [1,2]
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    myfunctions("sss",28)
+    console.log(newarrs),
+    console.log(newarrb.push(500))
+
 );
 
 // If you want to start measuring performance in your app, pass a function
