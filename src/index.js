@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App, { Mynameobj } from './controller/App';
+import App, { Mynameobj,Mydiv } from './controller/App';
 import reportWebVitals from './reportWebVitals';
 
 
 
 const car_obj = ReactDOM.createRoot(document.getElementById('call'));
 
-car_obj.render(<Mynameobj></Mynameobj>)
+car_obj.render(<Mydiv></Mydiv>)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <App></App>

@@ -13,4 +13,9 @@ export function Mynameobj(){
   let emp = "HELLOWORLD"
  return console.log(emp)
 }
+export function Mydiv(){
+    return (
+        <h1>Who lives in my Garage?</h1>
+    );
+}
 export default App;
