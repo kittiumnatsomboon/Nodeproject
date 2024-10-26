@@ -10,3 +10,21 @@ Tag ต่างๆใน HTML จะเรียกว่า Element
 ส่วนย่อยๆของหน้าเว็บมาประกอบกันโดยจะเขียนด้วย javascript เพื่อทำหน้าตาแต่ละส่วนของหน้าเว็บ แทนการเขียน HTML
 
 React จะไม่เขียนใน HTML แต่จะเขียนในไฟล์ javascript ซึ่งจะใช้ JSX แทนที่ทำให้สามารถเขียน HTML ใน javascript ได้นั่นเอง
+
+สร้างได้ 2 แบบ
+1. class Component => โครงสร้างซับซ้อน
+2. function Component -> ไม่ซับซ้อน 
+สร้างComponent ที่ง่ายที่สุด รูปแบบฟังชั่นธรรมดา ***โดยกำหนดตัวอักษรตัวแรกของฟังชั่นเป็นตัวใหญ่เสมอ
+function Helloworld(){
+
+    return <h1>SSSS</h1>
+}
+
+
+สร้าง Component แบบ class
+class Helloworld extends React.Component{
+    render(){
+        return <h1></h1>
+    }
+
+}

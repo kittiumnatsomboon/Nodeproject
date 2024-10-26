@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App, { Saygood } from './controller/App';
+import App , { Myform }from './controller/App';
 import reportWebVitals from './reportWebVitals';
 
 
 
 const car_obj = ReactDOM.createRoot(document.getElementById('call'));
 
-car_obj.render(<Saygood></Saygood>)
+car_obj.render(<Myform></Myform>)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <App></App>
