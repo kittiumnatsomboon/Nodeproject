@@ -4,15 +4,18 @@ import './index.css';
 import App from './controller/App';
 import reportWebVitals from './reportWebVitals';
 
-const product = {
-    product_name :"computer",
-    product_price : 15000,
-    product_type : "c"
+
+let myfunctions = (customeradd = "กรุงเทพ",nickname,age_number)=>{
+    let address = `ที่อยู่ปัจจุบัน ${customeradd} ชื่อเล่น ${nickname} อายุ ${age_number}`
+    return address
 }
-const {product_name,product_price} = product
+let myfunction = (nickname,age_number,customeradd = "กรุงเทพ")=>{
+    let address = `ชื่อเล่น ${nickname} อายุ ${age_number}`
+    return address
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-   console.log("สินค้า" + product_name + "ราคา " + product_price)
+    myfunctions("sss",28)
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -87,3 +87,13 @@ const {product_name:pro_name} = product
 
 บรรทัด 86 คือ สร้างค่าคงที่และใช้ destructuring และก็นำ key ใน object มากำหนดค่าตัวแปรเพื่อนำค่าใน key มาใช้งาน
 ----------------------------------------------------------------------
+defultparameter กำหนดค่าเริ่มต้นของ parameter แบบฟังชั่น
+
+let myfunction = (nickname,age_number,customeradd = "กรุงเทพ")=>{
+    let address = `ชื่อเล่น ${nickname} อายุ ${age_number} ที่อยู่ปัจจุบัน ${customeradd}`
+    return address
+}
+** ค่าdefult parameter ควรกำหนดไว้ด้านหลังของพารามิเตอร์
+--------------------------------------------------------------------------
+
+
