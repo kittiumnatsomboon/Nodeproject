@@ -4,17 +4,12 @@ import './index.css';
 import App from './controller/App';
 import reportWebVitals from './reportWebVitals';
 
-
-const newarr = [10,20,30]
-const newarre = [40,50,60]
-const newarrs = [...newarr,...newarre]
-
-const newarrb = [1,2]
+const fruit = ["mango","banana","apple"]
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    console.log(newarrs),
-    console.log(newarrb.push(500))
+    console.warn(fruit.splice(1,2,"ProductID")),
+    console.log(fruit)
 
 );
 

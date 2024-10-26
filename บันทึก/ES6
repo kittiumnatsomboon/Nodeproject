@@ -110,4 +110,6 @@ let totalarr = myproduct.concat(myarr)
 
 ; push pop ship unship splice , slice ฟังชั่นอื่นๆ
 1.push : นำarrayไปต่อท้ายอันเดิม
-
+array.splice(index, count, item1, ....., itemX)
+splice(ตำแหน่งที่จะลบ,จำนวน,สามาชิกที่ต้องการเพิ่ม)
+------------------------------------------------
