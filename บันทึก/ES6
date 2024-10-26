@@ -68,3 +68,22 @@ let summation = (...numberarr)=>{
     let total = 0
     for(let number of numberarr) console.log(total += number)
 }
+---------------------------------------------------------------------
+destructuring : การสลายโครงสร้าง คือ การกำหนดค่าที่อยู่ภายในArray หรือ object 
+ให้กับตัวแปรโดยใช้วิธีการจับคู่ตัวแปรกับค่าใน Array หรือ object เช่น
+
+ตัวอย่างสร้างแบบ Array
+const coller = ["red","yello"]
+const [a , b] = coller
+
+ตัวอย่างแบบ object
+const product = {
+    product_name :"computer",
+    product_price : 15000,
+    product_type : "c"
+}
+const {product_name,product_price} = product
+const {product_name:pro_name} = product
+
+บรรทัด 86 คือ สร้างค่าคงที่และใช้ destructuring และก็นำ key ใน object มากำหนดค่าตัวแปรเพื่อนำค่าใน key มาใช้งาน
+----------------------------------------------------------------------
