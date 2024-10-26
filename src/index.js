@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './controller/App';
 import reportWebVitals from './reportWebVitals';
-const newarr = [10,20,30]
-const newarrs = [...newarr]
+
+
+ let summation = (...numberarr)=>{
+    let total = 0
+    for(let number of numberarr) console.log(total += number)
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    console.log(newarrs)
+   summation(4,5)
 );
 
 // If you want to start measuring performance in your app, pass a function
