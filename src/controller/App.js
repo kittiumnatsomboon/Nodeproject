@@ -18,4 +18,7 @@ export function Mydiv(){
         <h1>Who lives in my Garage?</h1>
     );
 }
+export let Saygood = ()=>{
+    return (<h1>HELLO GOODJOB</h1>)
+}
 export default App;
