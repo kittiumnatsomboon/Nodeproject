@@ -4,15 +4,13 @@ import './index.css';
 import App from './controller/App';
 import reportWebVitals from './reportWebVitals';
 
-const product = {
-    product_name :"computer",
-    product_price : 15000,
-    product_type : "c"
-}
-const {product_name,product_price} = product
+const fruit = ["mango","banana","apple"]
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-   console.log("สินค้า" + product_name + "ราคา " + product_price)
+    console.warn(fruit.splice(1,2,"ProductID")),
+    console.log(fruit)
+
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -45,7 +45,7 @@ root.render(
 Spread operator : ใช้จัดการกระจายสมาชิกใน Array ออกมาโดยเติมเครื่องหมาย ... ด้านหน้าตัวแปร Array
 ตัวอย่าง
 const newarr = [10,20,30]
-const newarrs = [...newarr,20,30]
+const newarrs = [...newarr,20,30] = newarr
 แบบ object ก็ทำได้เช่นกัน
 const myVehicle = {
   brand: 'Ford',
@@ -87,3 +87,29 @@ const {product_name:pro_name} = product
 
 บรรทัด 86 คือ สร้างค่าคงที่และใช้ destructuring และก็นำ key ใน object มากำหนดค่าตัวแปรเพื่อนำค่าใน key มาใช้งาน
 ----------------------------------------------------------------------
+defultparameter กำหนดค่าเริ่มต้นของ parameter แบบฟังชั่น
+
+let myfunction = (nickname,age_number,customeradd = "กรุงเทพ")=>{
+    let address = `ชื่อเล่น ${nickname} อายุ ${age_number} ที่อยู่ปัจจุบัน ${customeradd}`
+    return address
+}
+** ค่าdefult parameter ควรกำหนดไว้ด้านหลังของพารามิเตอร์
+--------------------------------------------------------------------------
+การทำงานกับ Array
+join , concat
+
+join = แปลงArray เป็น string
+let myproduct = ["product1","product2"]
+myproduct.join()
+***product1,product2 สามารถเปลี่ยนเครื่องหมายขั้นแต่ละสมาชิกบน Array ได้ภายในคำสั่ง join
+
+concat : ผลลัพคือเพิ่มอาร์เรย์เข้าไปต่อท้ายอาร์เรย์เดิม
+let myproduct = ["product1","product2"]
+let myarr = ["product3","product4"]
+let totalarr = myproduct.concat(myarr)
+
+; push pop ship unship splice , slice ฟังชั่นอื่นๆ
+1.push : นำarrayไปต่อท้ายอันเดิม
+array.splice(index, count, item1, ....., itemX)
+splice(ตำแหน่งที่จะลบ,จำนวน,สามาชิกที่ต้องการเพิ่ม)
+------------------------------------------------
