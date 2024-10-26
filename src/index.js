@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './controller/App';
+import App, { Mynameobj,Mydiv } from './controller/App';
 import reportWebVitals from './reportWebVitals';
 
-const fruit = ["mango","banana","apple"]
 
+
+const car_obj = ReactDOM.createRoot(document.getElementById('call'));
+
+car_obj.render(<Mydiv></Mydiv>)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    console.warn(fruit.splice(1,2,"ProductID")),
-    console.log(fruit)
-
+   <App></App>
+   
 );
 
 // If you want to start measuring performance in your app, pass a function
