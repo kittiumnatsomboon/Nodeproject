@@ -4,12 +4,19 @@ import './index.css';
 import App from './controller/App';
 import reportWebVitals from './reportWebVitals';
 
-const fruit = ["mango","banana","apple"]
+let myloop = ()=>{
+   const fruit = ["mango","banana","apple"]
+
+   let text = "";
+   for (let x of fruit) {
+        if(x == "apple")break
+        console.log(`ค่าในอาร์เรย์ ${x}`)
+    }
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    console.warn(fruit.splice(1,2,"ProductID")),
-    console.log(fruit)
+    myloop()
 
 );
 

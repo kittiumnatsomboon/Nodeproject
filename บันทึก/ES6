@@ -113,3 +113,27 @@ let totalarr = myproduct.concat(myarr)
 array.splice(index, count, item1, ....., itemX)
 splice(ตำแหน่งที่จะลบ,จำนวน,สามาชิกที่ต้องการเพิ่ม)
 ------------------------------------------------
+Loop ข้อมูลใน Array
+for , foreach , for of
+
+for ;
+let myloop = ()=>{
+   const fruit = ["mango","banana","apple"]
+    for(let index = 0;index < fruit.length; index ++){
+        console.log(fruit +":"+ index)
+    } 
+}
+
+foreach;
+    fruit.forEach(elem => {
+       
+    });
+
+ดึงอาร์เรย์ใน fruit มาใช้งานทีละตัว
+for of
+const fruit = ["mango","banana","apple"]
+
+let text = "";
+for (let x of fruit) {
+    console.log(text += x + ",")
+}
