@@ -3,18 +3,22 @@ import '../App.css'
 import { render } from '@testing-library/react';
 import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
-}
+
 export class Myform extends React.Component{
     render(){
-        return <p>สวัสดีมายฟอร์ม</p>
+        return
     }
 }
+export const ItemList = ({ items }) => {
+  return (
+    <div>
+      {items.map((item, index) => (
+        <div key={index}>{item}
+          ddd
+        </div>
+      ))}
+    </div>
+  );
+};
 
-
-export default App;
+export default Myform;
