@@ -28,3 +28,10 @@ class Helloworld extends React.Component{
     }
 
 }
+เรียกใช้ class , function ใช้ < >Tag
+-------------------------------------
+React JSX คือ รูปแบบการเขียน HTML ลง javascript
+รูปแบบการเขียน JSX
+ **สามารถเขียนใน <div> / section / article / Fragment / <> ก็ได้ และต้องมีการกำหนด tag เปิด - ปิดทุกครั้ง
+
+ ** การใส่ class style ที่เป็น Attribute ใน JSX จะมีการกำหนด className แทน class ปกติเนื่องจาก class เป็น Keyword

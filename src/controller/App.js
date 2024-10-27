@@ -6,13 +6,15 @@ import React from 'react';
 function App() {
   return (
     <div className="App">
-      he
+      
     </div>
   );
 }
 export class Myform extends React.Component{
     render(){
-        return <h1>HELLO2</h1>
+        return <p>สวัสดีมายฟอร์ม</p>
     }
 }
+
+
 export default App;
